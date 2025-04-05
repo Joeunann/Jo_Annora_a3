@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Work</title>
+  <!-- Google Fonts: Darker Grotesque -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Darker Grotesque', sans-serif;
+      background-color: #ffffff;
+    }
+    
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+
+    /* Fixed Header */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #626161;
+      background-color: #FFF3F9;
+      padding: 5px 40px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 20px 5px #FFF3F9;
+    }
+    
+    /* Push nav items toward the right on larger screens */
+    .site-header nav {
+      margin-left: 400px;
+    }
+    
+    /* Home Button styling */
+    .site-header a {
+      text-decoration: none;
+      color: #626161;
+    }
+    
+    .site-header a:hover {
+      color: #FFCDE7;
+    }
+    
+    /* Full-Screen Introduction Section */
+    .intro-section {
+      text-align: center;
+      background-color: #FFF3F9;
+      padding: 40px;
+      margin: 30% 10%;
+      font-size: 30px;
+      color: #464444;
+      border-radius: 70px;
+      box-shadow: 0 0 20px 5px #FFF1F9;
+    }
+
+    /* Container for Projects & Skills */
+    .container {
+      width: 90%;
+      margin: 5% auto;
+      background-color: #fff;
+      padding: 10px;
+    }
+    
+    /* Section Styling */
+    .section {
+      margin: 20px 0;
+      padding: 20px 50px;
+      border: 1px solid #ddd;
+      background-color: #fafafa;
+      border-radius: 30px;
+    }
+    
+    /* Image Styling & Float */
+    .float-img {
+      float: left;
+      margin-right: 15px;
+    }
+    
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    /* Footer Styling */
+    footer {
+      background-color: #FFF3F9;
+      color: #333;
+      text-align: center;
+      margin-top: 10px;  
+      padding-top: 20px;
+      padding-bottom: 40px; 
+    }
+    footer a {
+      text-decoration: none;
+      color: #626161;
+    }
+    footer a:hover {
+      color: #FFCDE7;
+    }
+        
+    /* For tablets and small desktops */
+    @media (max-width: 768px) {
+      .site-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+      .site-header nav {
+        margin: 0 0;
+      }
+      .intro-section {
+        margin: 50% 8%;
+        font-size: 22px;
+        padding: 30px;
+      }
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+      .section {
+        padding: 10px 5%;
+      }
+      .float-img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+      }
+    }
+    
+    /* For mobile phones */
+    @media (max-width: 480px) {
+      .site-header {
+        padding: 5px 20px;
+      }
+      .intro-section {
+        margin:50% 10%;
+        font-size: 20px;
+        padding: 20px;
+      }
+      .container {
+        width: 90%;
+        padding: 10px;
+      }
+      .section {
+        padding: 5% 10%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Header with Home Button and Navigation -->
+  <header class="site-header">
+    <div class="home-button">
+      <h2>Annora (Eungeat) Jo</h2>
+    </div>
+    <nav>
+      <h2 style="word-spacing: 30px;">
+        <a href="index.html">Work</a>
+        <a href="about_resume.html#about">About</a>
+        <a href="about_resume.html#resume">Resume</a>
+      </h2>
+    </nav>
+  </header>
+
+  <!-- Full-Screen Introduction Section -->
+  <section class="intro-section">
+    <h1>
+      A Product Designer with<br>
+      a pixel-level precision and a background<br>
+      in front-end development.
+    </h1>
+  </section>
+
+  <!-- Main Container for Projects and Skills -->
+  <div class="container">
+    <!-- Section: Projects -->
+    <section class="section clearfix">
+      <h1>Creations</h1>
+      <p>Below are some examples of my work. Click an image for a closer look.</p>
+      <!-- At least three images with complete attributes -->
+      <img src="https://via.placeholder.com/150" width="150" height="150" alt="Project 1" class="float-img">
+      <img src="https://via.placeholder.com/150" width="150" height="150" alt="Project 2" class="float-img">
+      <img src="https://via.placeholder.com/150" width="150" height="150" alt="Project 3" class="float-img">
+      <div class="clearfix"></div>
+      <p>For more details on my process, please visit my <a href="work-process.html">Work Process</a> page.</p>
+    </section>
+
+    <!-- Section: Skills Table -->
+    <section class="section">
+      <h2>My Skills</h2>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Proficiency</th>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Advanced</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Graphic Design</td>
+          <td>Advanced</td>
+        </tr>
+        <tr>
+          <td>Photography</td>
+          <td>Intermediate</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+
+  <!-- Footer with Contact Info -->
+  <footer>
+    <h1>Let's Connect :D</h1>
+    <h3 style="word-spacing: 100px;">
+      <a href="mailto:a3jo@uwaterloo.ca">a3jo@uwaterloo.ca</a>
+      <a href="www.linkedin.com/in/annorajo">LinkedIn</a>
+      <a href="https://www.instagram.com/annora.jo/">Instagram</a>
+    </h3>
+  </footer>
+</body>
+</html>
